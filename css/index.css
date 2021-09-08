@@ -1,0 +1,517 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    background-color: #1A1A2E;
+    width: 100%;
+    font-size: 18px;
+}
+
+.nab {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    list-style: none;
+    border-radius: 10px;
+    background: linear-gradient(34deg, #4a1f963b, #ffffff57);
+}
+
+.divider::before {
+    content: "";
+    position: absolute;
+    height: 18px;
+    width: 1px;
+    background-color: white;
+    left: 53rem;
+    top: 20px;
+}
+
+.divider1::before {
+    content: "";
+    position: absolute;
+    height: 18px;
+    width: 1px;
+    background-color: white;
+    left: 37.5rem;
+    top: 20px;
+}
+
+.divider2::before {
+    content: "";
+    position: absolute;
+    height: 18px;
+    width: 1px;
+    background-color: white;
+    left: 22.2rem;
+    top: 20px;
+}
+
+.nab a {
+    color: white;
+    text-decoration: none;
+}
+
+.form-group {
+    width: 80%;
+    margin: auto;
+}
+
+.form-group label {
+    font-size: 18px;
+}
+
+.alert-password {
+    text-align: center;
+    padding-right: 69px;
+}
+
+.text {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.text p:first-child {
+    padding-right: 47px;
+}
+
+.text p:nth-child(2) {
+    padding-right: 100px;
+}
+
+.btn2 {
+    width: 80%;
+    background-image: linear-gradient(to top, rgb(241 206 119), rgb(245 216 144));
+    margin: 20px 47px 5px 47px;
+}
+
+.btn2:hover {
+    outline: #854fee;
+}
+
+.sign {
+    text-align: center;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+.btn1 {
+    background-color: #1A1A2E;
+    color: #fff;
+}
+
+.btn1:hover {
+    background-color: #fff;
+    border-color: rgb(47, 0, 255);
+    color: #000;
+}
+
+.lock {
+    height: 130px;
+    width: 130px;
+    border: 2px solid black;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.lock img {
+    height: 90px;
+    width: 90px;
+}
+
+
+/* nav finished  */
+
+
+/* service section starts here  */
+
+.c1 {
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.c::before {
+    content: "";
+    top: 0;
+    width: 100%;
+    height: 30vh;
+    z-index: -1;
+    position: absolute;
+    background-color: rgba(55, 55, 247, 0.678);
+    z-index: -1;
+}
+
+.c2::before {
+    content: "";
+    width: 100%;
+    height: 130vh;
+    left: 0;
+    position: absolute;
+    background-image: url(https://wpamelia.com/wp-content/uploads/2019/02/abstract-astronomy-dark-924824.jpg);
+    background-size: cover;
+    z-index: -1;
+}
+
+.c2 h1 {
+    text-align: center;
+    height: 10vh;
+    color: #fff;
+    font-weight: bold;
+}
+
+.row {
+    width: 100%;
+    margin: 0;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #0f0f0f71;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+.card:hover .overlay {
+    transform: scale(1);
+}
+
+.card:hover p {
+    color: red;
+    transform: scale(1.1);
+}
+
+.card a {
+    text-decoration: none;
+    color: #000;
+    width: 100%;
+    height: 100%;
+}
+
+.img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 180px;
+    font-size: 30px;
+    color: #000;
+    font-weight: bold;
+}
+
+.me-2 {
+    margin-right: 4px;
+}
+
+
+/* Crausel starts from here  */
+
+.c4::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(55, 55, 247, 0.808);
+    width: 100%;
+    height: 222vh;
+    z-index: -1;
+    left: 0;
+}
+
+.carousel {
+    width: 90%;
+    margin: auto;
+    /* margin-top: 5vh; */
+}
+
+.crimg {
+    padding-top: 5vh;
+    height: 70vh;
+}
+
+.featured {
+    width: 100%;
+    height: 65vh;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    background-color: #0f0f0f41;
+}
+
+.featured p {
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.feautre1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.list-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btm {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0px auto;
+}
+
+.c5 p {
+    text-align: center;
+    font-size: 35px;
+    font-weight: bolder;
+    color: #fff;
+}
+
+.btm1 {
+    width: 300px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 40px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.ul {
+    background-color: #fff;
+    padding: 5%;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+
+/* review ki css  */
+
+.review {
+    height: 50vh;
+    width: 80%;
+    background-color: chartreuse;
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.form {
+    width: 40%;
+    height: 40vh;
+    border: 2px solid transparent;
+    background-color: #fff;
+    padding-left: 25px;
+    padding-top: 20px;
+}
+
+label {
+    font-size: 22px;
+    color: #000;
+    font-weight: 700;
+}
+
+textarea {
+    width: 90%;
+}
+
+.btnn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 35px;
+    background-image: linear-gradient(to right, #4458dc 0%, #854fee 100%);
+    font-size: 18px;
+    cursor: pointer;
+    width: 40%;
+    padding: 0;
+    margin: 0px auto;
+}
+
+.btnn p {
+    margin: auto;
+}
+
+.btnn:hover {
+    background-image: linear-gradient(to right, red, yellow);
+    color: #fff;
+}
+
+.comments {
+    height: 48vh;
+    width: 45%;
+    border: 2px solid transparent;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+.feedback {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feedback p {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.feed {
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+.feed::-webkit-scrollbar {
+    display: none;
+}
+
+.baxa {
+    width: 80%;
+    height: 110px;
+    border: 2px solid black;
+    display: flex;
+    background-color: #fff;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.item_input {
+    padding-left: 10px;
+    border: none;
+    resize: none;
+    width: 70%;
+    height: 90px;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    margin-top: 2px;
+    background-color: rgb(209, 205, 205);
+    overflow-y: scroll;
+}
+
+.item_input::-webkit-scrollbar {
+    display: none;
+}
+
+.icon {
+    background-image: url(images/profile.png);
+    background-position: center;
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    border-radius: 50px;
+    border: 1px solid;
+    width: 70px;
+    height: 70px;
+}
+
+.task {
+    height: 20vh;
+}
+
+.cimg {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+}
+
+.limg {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.heart,
+.like,
+.dislike {
+    margin-right: 3px;
+    margin-top: 4px;
+    margin-left: 3px;
+    /* height: 25px;
+    width: 25px; */
+}
+
+.heart:hover,
+.like:hover {
+    transform: scale(1.1);
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.border-t {
+    background-color: #000;
+    color: #fff;
+    padding-top: 3vh;
+}
+
+@media (max-width:800px) {
+    .navbar {
+        box-shadow: none;
+    }
+}
+
+@media (max-width:400px) {
+    .c1 {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .c2 h1 {
+        font-size: 2rem;
+    }
+}
+
+@media(max-width:1400px) {
+    .divider1::before,
+    .divider2::before,
+    .divider::before {
+        display: none;
+    }
+}
+
+@media(max-width:992px) {
+    .nab {
+        /* width: 60%; */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+        /* border: 2px solid white; */
+        margin: 5px 0px;
+        background-image: none;
+    }
+    .nab a {
+        padding: 11px;
+        font-size: 20px;
+    }
+}
