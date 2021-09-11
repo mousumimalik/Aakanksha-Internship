@@ -70,3 +70,34 @@ function check() {
     inputValue.value = "";
   }
 }
+
+//  tagline
+
+const changingText = document.querySelector("#changing-text");
+
+window.addEventListener("load", function(){
+  changeText();
+});
+
+const textArr = ["CARPENTER", "ELECTRICIAN", "PLUMBER", "TURIST GUIDE", "COOK", "LAUNDRY", "TECHNICIAN"];
+
+let index = 0;
+let word = textArr[index];
+let text = "";
+let isDeleting = false;
+
+function changeText() {
+    if(isDeleting && text.length == 0) {
+        index = (index + 1) % textArr.length;
+        word = textArr[index];
+        isDeleting = false;
+    }
+
+    if(text.length == word.length) {
+        isDeleting = true;
+    }
+
+    text = isDeleting ? word.substring(0,text.length - 1) : word.substring(0,text.length + 1) ;
+    changingText.innerHTML = text;
+    setTimeout(changeText, text.length == word.length ? 1000 : 200);
+}

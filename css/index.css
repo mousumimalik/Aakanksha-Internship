@@ -218,6 +218,18 @@
     margin-right: 4px;
 }
 
+/* tagline */
+
+#tagline {
+    margin: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-family: "Raleway", sans-serif;
+  }
+
 
 /* Crausel starts from here  */
 
