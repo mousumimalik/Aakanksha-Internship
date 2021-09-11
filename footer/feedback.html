@@ -4,11 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feedback Form</title>
-    <link rel="stylesheet" href="footer.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,600;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css" integrity="sha512-P9vJUXK+LyvAzj8otTOKzdfF1F3UYVl13+F8Fof8/2QNb8Twd6Vb+VD52I7+87tex9UXxnzPgWA3rH96RExA7A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">	
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>	
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="footer.css">
+    <title>Feedback Form</title> 
 </head>
 <body>
    
@@ -22,58 +30,62 @@
             <div class="row">
                 <div class="col-md-2"></div>
                 <div class="col-md-8"> 
-                    <h1 class="text-center mt-5 font-weight-bold">Feefback</h1>
+                    <h1 class="text-center mt-5 font-weight-bold">Feedback</h1>
                     <hr class="bg-white">
                     <h6 class="text-center">Please write your feedback below:</h6>
                     <h3 class="mt-4">How do you rate your overall experience?</h3>
 
-                    <form>
+                    <form class="feedback">
                         
-                        <div class="panel-container"  id="panel">
-                            <div class="ratings-container">
+                        <div class="panel-container ratings-container">
                                 <div class="rating">
-                                    <img src="https://image.flaticon.com/icons/svg/187/187150.svg"/>
+                                    <img src="./pics/f1.svg"/>
                                     <small>Unhappy</small>
                                 </div>
                                 <div class="rating">
-                                    <img src="https://image.flaticon.com/icons/svg/187/187136.svg"/>
+                                    <img src="./pics/f2.svg"/>
                                     <small>Neutral</small>
                                 </div>
                                 <div class="rating active">
-                                    <img src="https://image.flaticon.com/icons/svg/187/187133.svg"/>
+                                    <img src="./pics/f3.svg"/>
                                     <small>Satisfied</small>
                                 </div>
+                        </div>
+               				
+                        <div class="input-container">
+                            <div class="row">
+                                <div class="col-md-2"></div>
+                                <label class="col-md-4">Full Name*<br> <input type="text" id="text" required="" placeholder="Aakanksha Vedi"></label>
+                                <label class="col-md-4">Email*<br> <input type="text" id="text" required="" placeholder="aakanksha@gmail.com"></label>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-2"></div>
+                                <label class="col-md-4">Age*<br> <input type="number" id="text" required="" placeholder="25"></label>
+                                <label class="col-md-4 label-txt">Phone*<br> <input type="number" id="text" required="" placeholder="+92123456789"></label>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-2"></div>
+                                <label class="col-md-8 label-txt">Message*<br> <textarea id="message" required="" placeholder="Write yor message here" cols="48" rows="5"></textarea></label> 
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-2"></div>
+                                <button class="btn btn-primary submit-btn" id="send">Submit</button>
                             </div>
                         </div>
-
-
-
-
-
-                </div>
-            </div>					
-                        <div class="row">
-                            <div class="col-md-2"></div>
-                            <label class="col-md-4 label-txt">Full Name*<br> <input type="text" id="text" required="" placeholder="Aakanksha Vedi"></label>
-                            <label class="col-md-4 label-txt">Email*<br> <input type="text" id="text" required="" placeholder="aakanksha@gmail.com"></label>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-md-2"></div>
-                            <label class="col-md-4 label-txt">Age*<br> <input type="number" id="text" required="" placeholder="25"></label>
-                            <label class="col-md-4 label-txt">Phone*<br> <input type="number" id="text" required="" placeholder="+92123456789"></label>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-md-2"></div>
-                            <label class="col-md-8 label-txt">Message*<br> <textarea id="message" required="" placeholder="Write yor message here" cols="48" rows="5"></textarea></label> 
-                        </div>
-
-                        <div class="row">
-                            <div class="col-md-2"></div>
-                            <button class="btn btn-primary submit-btn" id="send">Submit</button>
-                        </div>
                     </form>
+
+                    <div class="done hide">
+                            <i class="fas fa-heart"></i>
+                            <strong>Thank you!</strong>
+                            <p>We'll use your feedback to improve our customer support performance.</p>
+                            <button class="contact-btn" id="doneBtn">Done</button> 
+                    </div>
+             
+                </div>
+            </div>
         </div>
     </div>
 
@@ -99,16 +111,15 @@
             <div class="footer-section links">
                 <h2>Quick Links</h2> <hr> <br>
                 <ul>
-                    <a href="index.html"> <li> <i class="bi bi-arrow-right-square-fill"></i> Home </li> </a> <hr>
-                    <a href="serviceprovide.html"> <li> <i class="bi bi-arrow-right-square-fill"></i> Shop </li> </a> <hr>
-                    <a href="./footer/team.html"> <li> <i class="bi bi-arrow-right-square-fill"></i> Team</li> <hr>
-                    <a href="./footer/carousel-10/index.html"> <li> <i class="bi bi-arrow-right-square-fill"></i> Gallery</li> </a> <hr>
-                    <a href="#"> <li> <i class="bi bi-arrow-right-square-fill"></i> Feedback </li> </a> <hr>
+                    <a href="../index.html"> <li> <i class="bi bi-arrow-right-square-fill"></i> Home </li> </a> <hr>
+                    <a href="../serviceprovide.html"> <li> <i class="bi bi-arrow-right-square-fill"></i> Shop </li> </a> <hr>
+                    <a href="team.html"> <li> <i class="bi bi-arrow-right-square-fill"></i> Team</li> <hr>
+                    <a href="./carousel-10/index.html"> <li> <i class="bi bi-arrow-right-square-fill"></i> Gallery</li> </a> <hr>
+                    <a href="feedback.html"> <li> <i class="bi bi-arrow-right-square-fill"></i> Feedback </li> </a> <hr>
                     <a href="#"> <li> <i class="bi bi-arrow-right-square-fill"></i> Help and Support</li> </a> <hr>
-                    <a href="./footer/termsandcondition.html"> <li> <i class="bi bi-arrow-right-square-fill"></i> Terms and Conditions</li> </a>
+                    <a href="termsandcondition.html"> <li> <i class="bi bi-arrow-right-square-fill"></i> Terms and Conditions</li> </a>
                 </ul>
             </div>
-
             <div class="footer-section contact-form">
                 <h2>Email Newsletter</h2> <hr> <br>
                 <p> Subscribe to our mailing list to get update </p> <br>
@@ -121,18 +132,20 @@
         </div>
         <div class="footer-bottom">
             <img src="https://img.icons8.com/color/36/000000/visa.png"> <img src="https://img.icons8.com/color/36/000000/g.png"> <img src="https://img.icons8.com/color/36/000000/mastercard.png"> <img src="https://img.icons8.com/color/36/000000/amex.png"> <img src="https://img.icons8.com/color/36/000000/paypal.png"> <br>
-            <i class="fa fa-copyright"></i>
-            <strong> Aakanksha || 2021  </strong>
+            <i class="fa fa-copyright"></i> <strong> Aakanksha || 2021  </strong>
         </div>
     </div>
 <!-- // footer -->
 
 
+
     <script>
         const ratingsEl = document.querySelectorAll(".rating");
         const sendBtn = document.querySelector("#send");
-        const panel = document.querySelector("#panel");
-
+        const done = document.querySelector(".done");
+        const feedback = document.querySelector(".feedback");
+        const doneBtn = document.querySelector("#doneBtn");
+    
         ratingsEl.forEach((el) => {
             el.addEventListener("click", () => {
                 ratingsEl.forEach((innerEl) => {
@@ -142,13 +155,15 @@
             });
         });
 
-        sendBtn.addEventListener("click", () => {
-        panel.innerHTML = `
-                <i class="fas fa-heart"></i>
-                <strong>Thank you, Florin!</strong>
-                <p>We'll use your feedback to improve our customer support performance.</p>
-                <button class="btn">Done</button>
-            `;
+        sendBtn.addEventListener('click', (e)=>{
+            e.preventDefault();
+            done.classList.remove("hide");
+            feedback.classList.add("hide");
+        });
+
+        done.addEventListener('click', ()=>{
+            feedback.classList.remove("hide");
+            done.classList.add("hide");
         });
     </script>
             
