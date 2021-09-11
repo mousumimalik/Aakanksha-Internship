@@ -244,7 +244,7 @@
 
 .featured {
     width: 100%;
-    height: 65vh;
+    height: 70vh;
     border: 2px solid transparent;
     border-radius: 20px;
     margin-top: 5vh;
@@ -260,8 +260,13 @@
 
 .feautre1 {
     display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
     align-items: center;
-    justify-content: space-around;
+}
+
+.feautre1::-webkit-scrollbar {
+    display: none;
 }
 
 .list-group {
@@ -276,6 +281,7 @@
     align-items: center;
     justify-content: space-around;
     margin: 0px auto;
+    flex-wrap: wrap;
 }
 
 .c5 p {
@@ -283,6 +289,29 @@
     font-size: 35px;
     font-weight: bolder;
     color: #fff;
+}
+
+.text1 {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text1 p {
+    margin-bottom: 0;
+    font-size: 16px;
+    color: #000;
+}
+
+.cardss {
+    width: 30%;
+    margin: 10px 10px;
 }
 
 .btm1 {
@@ -294,14 +323,27 @@
     font-weight: bold;
 }
 
-.ul {
-    background-color: #fff;
-    padding: 5%;
-    border-radius: 20px;
-    font-size: 16px;
+.card {
+    width: 18rem;
 }
 
+@media(max-width:950px) {
+    .cardss {
+        width: 50%;
+    }
+}
 
+@media(max-width:590px) {
+    .cardss {
+        width: 100%;
+    }
+    .card {
+        width: 14rem;
+    }
+    .featured {
+        height: 63vh;
+    }
+}
 /* review ki css  */
 
 .review {
