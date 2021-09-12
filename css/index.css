@@ -4,8 +4,14 @@
     scroll-behavior: smooth;
 }
 
+
+/* body {
+    background-image: linear-gradient(to right, #55de4b, #00de96, #00d8d1, #00cdf5, #00befc,
+     #68bdfa, #90bcf5, #acbced, #c5cbf1, #dadcf5, #eeedfa, #ffffff);
+} */
+
 .navbar {
-    background-color: rgb(14, 143, 36);
+    background-color: #85317a;
     width: 100%;
     font-size: 18px;
 }
@@ -71,16 +77,9 @@
 }
 
 .text {
-    text-align: center;
     margin-top: 10px;
-}
-
-.text p:first-child {
-    padding-right: 47px;
-}
-
-.text p:nth-child(2) {
-    padding-right: 100px;
+    width: 80%;
+    margin: auto;
 }
 
 .btn2 {
@@ -125,50 +124,69 @@
     height: 90px;
     width: 90px;
 }
+
+
 /* nav finished  */
 
 
 /* service section starts here  */
 
 .c1 {
-    height: 20vh;
+    height: 10vh;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: auto;
 }
 
+#myUl {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+}
+
+#myUl .card {
+    width: 24%;
+    margin-bottom: 10px;
+}
+
+
+/* #myUl li {} */
+
 .c::before {
     content: "";
     top: 0;
     width: 100%;
-    height: 30vh;
+    height: 460vh;
     z-index: -1;
     position: absolute;
-    z-index: -1;
+    /* background-color: #eff6e0; */
 }
 
-.c2::before {
-    content: "";
+.c2 {
     width: 100%;
-    height: 130vh;
-    left: 0;
-    position: absolute;
-    background-image: url(https://wpamelia.com/wp-content/uploads/2019/02/abstract-astronomy-dark-924824.jpg);
-    background-size: cover;
-    z-index: -1;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
 }
 
 .c2 h1 {
     text-align: center;
     height: 10vh;
-    color: #fff;
+    color: #000;
     font-weight: bold;
 }
 
 .row {
     width: 100%;
     margin: 0;
+    align-items: center;
+    justify-content: center;
 }
 
 .overlay {
@@ -215,11 +233,14 @@
     margin-right: 4px;
 }
 
-/* tagline */
+.form-control {
+    border: 1px solid black;
+}
+
+
+/*tagline */
 
 #tagline {
-    height: 100px;
-    background-color: rgb(168, 219, 168);
     margin: 30px 0px;
     display: flex;
     flex-direction: column;
@@ -227,31 +248,32 @@
     align-items: center;
     font-size: 35px;
     font-family: "Raleway", sans-serif;
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
+}
 
 
 /* Crausel starts from here  */
 
-.c4::before {
-    content: "";
-    position: absolute;
-    background-color: rgba(55, 55, 247, 0.808);
-    width: 100%;
-    height: 222vh;
-    z-index: -1;
-    left: 0;
-}
-
 .carousel {
     width: 90%;
     margin: auto;
+    /* margin-top: 5vh; */
 }
 
 .crimg {
     padding-top: 5vh;
     height: 70vh;
+}
+
+.carousel-indicators {
+    visibility: hidden;
+}
+
+.carousel-control-next-icon {
+    visibility: hidden;
+}
+
+.carousel-control-prev {
+    visibility: hidden;
 }
 
 .featured {
@@ -300,7 +322,7 @@
     text-align: center;
     font-size: 35px;
     font-weight: bolder;
-    color: #fff;
+    color: #000;
 }
 
 .text1 {
@@ -339,28 +361,89 @@
     width: 18rem;
 }
 
-@media(max-width:950px) {
-    .cardss {
-        width: 50%;
+.ul {
+    background-color: #fff;
+    padding: 5%;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+
+/* Security ki css  */
+
+.norms {
+    width: 90%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.norms1 {
+    width: 45%;
+    height: fit-content;
+    background-color: #fff;
+    border-radius: 15px;
+    display: inline-block;
+    padding: 20px;
+    box-shadow: 2px 2px 2px 2px #000;
+}
+
+.norms1 ul {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    font-size: 16px;
+    list-style: square;
+}
+
+.norms1 p {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    color: black;
+}
+
+.norms1 ul {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.expandable {
+    color: black;
+}
+
+.expandable1 {
+    color: black;
+}
+
+@media(max-width:1200px) {
+    .norms {
+        width: 95%;
+        flex-wrap: wrap;
+    }
+    .norms1 {
+        width: 90%;
+        margin-bottom: 20px;
     }
 }
 
-@media(max-width:590px) {
-    .cardss {
+@media(max-width:850px) {
+    .norms1 ul {
+        font-size: 15px;
+        padding: 2%;
+    }
+    .norms1 {
         width: 100%;
     }
-    .card {
-        width: 14rem;
-    }
-    .featured {
-        height: 63vh;
-    }
 }
+
+
 /* review ki css  */
 
 .review {
     height: 100vh;
     width: 90%;
+    /* background-color: #fff; */
     margin: auto;
     display: flex;
     justify-content: space-evenly;
@@ -382,6 +465,7 @@
 }
 
 .headi {
+    /* border: 2px solid black; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -441,7 +525,9 @@
     padding: 0px 5px 0px 10px;
     height: 35vh;
 }
-/*review ki css ends here */
+
+
+/* responsive ki css  */
 
 @media(max-width:1400px) {
     .divider1::before,
@@ -449,6 +535,9 @@
     .divider::before {
         display: none;
     }
+    /* .c::before {
+        height: 510vh;
+    } */
 }
 
 @media(max-width:1300px) {
@@ -456,6 +545,17 @@
         flex-direction: column;
         height: 40vh;
         align-items: center;
+    }
+}
+
+@media(max-width:1200px) {
+    .norms {
+        width: 95%;
+        flex-wrap: wrap;
+    }
+    .norms1 {
+        width: 90%;
+        margin-bottom: 20px;
     }
 }
 
@@ -487,11 +587,24 @@
     .navbar {
         box-shadow: none;
     }
+    #carouselExampleCaptions {
+        display: none;
+    }
 }
 
 @media(max-width:950px) {
     .cardss {
         width: 50%;
+    }
+}
+
+@media(max-width:850px) {
+    .norms1 ul {
+        font-size: 15px;
+        padding: 2%;
+    }
+    .norms1 {
+        width: 100%;
     }
 }
 
@@ -522,6 +635,9 @@
     .rev-cnt {
         height: 95vh;
     }
+    .c5 p {
+        font-size: 1.5rem;
+    }
 }
 
 @media (max-width:600px) {
@@ -549,7 +665,7 @@
         width: 14rem;
     }
     .featured {
-        height: 55vh;
+        height: 60vh;
     }
     .rev-card {
         height: 48vh;
@@ -570,6 +686,9 @@
     .headi h4 {
         font-size: 1.2rem;
     }
+    .c5 p {
+        font-size: 1.2rem;
+    }
 }
 
 @media (max-width:400px) {
@@ -577,5 +696,8 @@
         width: 100%;
         display: flex;
         justify-content: space-between;
+    }
+    .c5 p {
+        font-size: 1rem;
     }
 }
