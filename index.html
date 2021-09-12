@@ -26,23 +26,35 @@
 </head>
 
 <body>
-    <div class="c">
+  <div class="c ">
         <!-- nav starts from here  -->
         <nav class="navbar navbar-expand-lg navbar-dark">
             <a class="navbar-brand" href="#">Lifeline</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="nab">
-                    <li class=""> <a href="#">Home <span class="sr-only">(current)</span></a> </li>
-                    <li class="divider "> <a href="#deals">Lightning Deal</a> </li>
-                    <li class=" divider1"> <a href="#explore">Explore Employee</a> </li>
-                    <li class="divider2 "> <a href="serviceprovide.html">Reigster As Service Provider</a> </li>
+                    <li class="">
+                        <a href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="divider ">
+                        <a href="#deals">Lightning Deal</a>
+                    </li>
+                    <li class=" divider1">
+                        <a href="#explore">Explore Employee</a>
+                    </li>
+                    <li class="divider2 ">
+                        <a href="serviceprovider.html">Reigster As Service Provider</a>
+                    </li>
+
                 </ul>
                 <div class="mx-2">
-                    <button class="btn btn1" data-toggle="modal" data-target="#loginModal"><i class="bi bi-box-arrow-in-right"></i> Sign in</button>
-                    <button class="btn btn1" data-toggle="modal" data-target="#signupModal"><i class="bi bi-person-plus-fill"></i> Sign UP</button>
+                    <button class="btn btn1" data-toggle="modal" data-target="#loginModal"><i
+                            class="bi bi-box-arrow-in-right"></i> Sign in</button>
+                    <button class="btn btn1" data-toggle="modal" data-target="#signupModal"><i
+                            class="bi bi-person-plus-fill"></i> Sign UP</button>
                 </div>
         </nav>
         <!-- login Modal -->
@@ -66,17 +78,19 @@
                                 <input type="password" class="form-control" id="exampleInputPassword1">
                             </div>
                             <div class="text">
-                                <p style="margin-bottom: 0; padding-right: 20px;">By continuing, you agree to Lifeline's <a href="#">Terms of Use </a></p>
-                                <p style="margin-bottom: 0; padding-right:221px;"> and <a href="">Privacy Policy</a>.</p>
+                                <p style="margin-bottom: 0; padding-right: 20px;">By continuing, you agree to Lifeline's <a href="#">Terms of Use </a>and <a href="">Privacy Policy</a>.</p>
                             </div>
+
                             <button type="submit" class="btn btn2">Continue</button>
                         </form>
                         <div class="text">
                             <p style="text-align: center; margin-bottom: 0; padding-left: 50px;">Or</p>
                             <i class="bi bi-facebook" style="color: blue; cursor: pointer; margin-right: 15px;"><a href="">Sign in with Facebook</a></i>
                             <i class="bi bi-google" style="color: red; cursor: pointer;"><a href="">Sign in with Google </a></i>
-                            <p><a href="" data-toggle="modal" data-target="#forgetModal" data-dismiss="modal">Forget Password?</a></p>
-                        </div> <hr>
+                            <p><a href="" data-toggle="modal" data-target="#forgetModal" data-dismiss="modal" style="margin: 0px 100px;">Forget Password?</a></p>
+
+                        </div>
+                        <hr>
                         <div class="sign">
                             New to Lifeline ? <a href="" data-toggle="modal" data-target="#signupModal" data-dismiss="modal">Sign up<i class="bi bi-caret-right-fill" style="font-size: 16px;"></i></a>
                         </div>
@@ -102,6 +116,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="name">Mobile Number</label>
+
                                 <input type="tel" class="form-control" id="mobile" placeholder="">
                             </div>
                             <div class="form-group">
@@ -128,6 +143,7 @@
                 </div>
             </div>
         </div>
+
         <!-- password forgetten modal  -->
         <div class="modal fade" id="forgetModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
             <div class="modal-dialog">
@@ -154,158 +170,186 @@
                 </div>
             </div>
         </div>
-        <!-- nav ends here  -->
 
-        <!-- tag line -->
-            <div id="tagline">
-                <h4>Service on Demand</h4>
-                <h6>Our Services : <span id="changing-text"></span></h6>
-            </div>
+        <!-- nav ends here  -->
+        <div id="tagline">
+            <h4>Service on Demand</h4>
+            <h6>Our Services : <span id="changing-text"></span></h6>
+        </div>
 
         <!-- Search Section  -->
         <div class="container c1">
             <form class="d-flex justify-content-around">
                 <input class="form-control me-2" type="search" placeholder="Location" aria-label="Search">
-                <input class="form-control me-2" type="search" placeholder="Search services" aria-label="Search">
-                <button class="btn btn-outline-light" type="submit">Search</button>
+                <input class="form-control me-2" type="search" id="search" placeholder="Search services" onkeyup="myFunction()" aria-label="Search">
+                <!-- <button class="btn btn-outline-light" type="submit">Search</button> -->
             </form>
         </div>
         </div>
+
+
 
         <!-- Services Section  -->
         <div class="container-fluid c2" id="explore">
             <h1>Available Services</h1>
             <div class="row">
-                <div class="col-md-3">
-                    <div class="card mb-4 shadow-sm">
-                        <a href="service/electrician.html">
+                <ul id="myUl">
+                    <li class="servicee card shadow-sm">
+                        <!-- <a href="service/electrician.html"> -->
+                        <a href="./service/Electrician.html">
                             <div class="img" style="background: url(images/ele.jfif); background-position: center; background-size: cover; ">
                                 <p>Electrician</p>
-                                <div class="overlay"> </div>
+                                <div class="overlay">
+
+                                </div>
+
+
                             </div>
                         </a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card mb-4 shadow-sm">
+                    </li>
+                    <li class="servicee card shadow-sm">
                         <a href="service/carpentar.html">
                             <div class="img" style="background: url(images/carp.jfif); background-position: center;">
                                 <p>Carpanter</p>
-                                <div class="overlay"> </div>
+                                <div class="overlay">
+                                </div>
+
                             </div>
                         </a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card mb-4 shadow-sm">
+                    </li>
+                    <li class="servicee card shadow-sm">
+
                         <a href="service/plumber.html">
                             <div class="img" style="background: url(images/plumber.jfif); background-position: center;">
                                 <p>Plumber</p>
-                                <div class="overlay">  </div>
+                                <div class="overlay">
+                                </div>
+
                             </div>
                         </a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card mb-4 shadow-sm">
+
+                    </li>
+
+                    <li class="servicee card shadow-sm">
+
                         <a href="service/technician.html">
                             <div class="img" style="background: url(images/tech.jfif); background-position: center;">
                                 <p>Technician</p>
-                                <div class="overlay"> </div>
+                                <div class="overlay">
+                                </div>
+
                             </div>
                         </a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card mb-4 shadow-sm">
+
+                    </li>
+                    <li class="servicee card shadow-sm">
+
                         <a href="service/cook.html">
                             <div class="img" style="background: url(images/cook.jfif); background-position: center;">
                                 <p>Cook</p>
-                                <div class="overlay"> </div>
+                                <div class="overlay">
+                                </div>
+
                             </div>
                         </a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card mb-4 shadow-sm">
+
+                    </li>
+                    <li class="servicee card shadow-sm">
+
                         <a href="service/tourist.html">
-                            <div class="img" style="background: url(/images/TG.jfif); background-position: center;">
+                            <div class="img" style="background: url(images/TG.jfif); background-position: center;">
                                 <p>Guide</p>
-                                <div class="overlay"> </div>
+                                <div class="overlay">
+                                </div>
+
                             </div>
                         </a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card mb-4 shadow-sm">
+
+                    </li>
+                    <li class="servicee card shadow-sm">
                         <a href="service/laundry.html">
                             <div class="img" style="background: url(images/laundry.jfif); background-position: center;">
                                 <p>Laundry</p>
-                                <div class="overlay"> </div>
+                                <div class="overlay">
+                                </div>
+
                             </div>
                         </a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card mb-4 shadow-sm">
+
+                    </li>
+                    <li class="servicee card shadow-sm">
+
                         <a href="service/mechanic.html">
                             <div class="img" style="background: url(images/mech.jfif); background-position: center;background-size: cover;">
                                 <p>Mechanic</p>
-                                <div class="overlay"> </div>
+                                <div class="overlay">
+                                </div>
+
                             </div>
                         </a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card mb-4 shadow-sm">
+
+                    </li>
+                    <li class="servicee card shadow-sm">
+
                         <a href="service/painter.html">
                             <div class="img" style="background: url(images/paint.jfif)no-repeat; background-position: center;background-size: cover;">
                                 <p>Painter</p>
-                                <div class="overlay"> </div>
+                                <div class="overlay">
+                                </div>
+
                             </div>
                         </a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card mb-4 shadow-sm">
+
+
+                    </li>
+                    <li class="servicee card shadow-sm">
+
                         <a href="service/cleaner.html">
                             <div class="img" style="background: url(images/HC.jfif)no-repeat; background-position: center;background-size: cover;">
                                 <p>HomeCare</p>
-                                <div class="overlay"> </div>
+                                <div class="overlay">
+                                </div>
                             </div>
                         </a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card mb-4 shadow-sm">
+
+
+                    </li>
+                    <li class="servicee card shadow-sm">
+
+
                         <a href="service/Security.html">
                             <div class="img" style="background: url(images/sec.jpg)no-repeat; background-position: center;background-size: cover;">
                                 <p>Security</p>
-                                <div class="overlay"> </div>
+                                <div class="overlay">
+                                </div>
+
                             </div>
                         </a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card mb-4 shadow-sm">
+
+
+                    </li>
+                    <li class="servicee card shadow-sm">
+
                         <a href="/service/caretaker.html">
                             <div class="img" style="background: url(images/baby.jfif)no-repeat; background-position: center;background-size: cover;">
                                 <p>BabySitter</p>
-                                <div class="overlay"> </div>
+                                <div class="overlay">
+                                </div>
+
                             </div>
                         </a>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card mb-4 shadow-sm">
+                    </li>
+                    <li class="servicee card shadow-sm">
                         <a href="#">
                             <div class="img" style="background: url(images/all.jfif); background-position: center;background-size: cover;">
                                 <p>+See All</p>
-                                <div class="overlay"> </div>
+                                <div class="overlay">
+                                </div>
+
                             </div>
                         </a>
-                    </div>
-                </div>
+                    </li>
+                </ul>
             </div>
         </div>
 
@@ -319,24 +363,24 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="images/Deals.png" class="d-block w-100 crimg" alt="...">
+                        <img src="images/Lifeline.png" class="d-block w-100 crimg" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <!-- <h5>First slide label</h5> -->
-                            <p>Some representative placeholder content for the first slide.</p>
+                            <!-- <p>Some representative placeholder content for the first slide.</p> -->
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="images/Events.png" class="d-block w-100 crimg" alt="...">
+                        <img src="images/Lifeline2.png" class="d-block w-100 crimg" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <!-- <h5>Second slide label</h5> -->
-                            <p>Some representative placeholder content for the second slide.</p>
+                            <!-- <p>Some representative placeholder content for the second slide.</p> -->
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="images/Best Offers.png" class="d-block w-100 crimg" alt="...">
+                        <img src="images/Lifeline3.png" class="d-block w-100 crimg" alt="...">
                         <div class="carousel-caption d-none d-md-block">
                             <!-- <h5>Third slide label</h5> -->
-                            <p>Some representative placeholder content for the third slide.</p>
+                            <!-- <p>Some representative placeholder content for the third slide.</p> -->
                         </div>
                     </div>
                 </div>
@@ -351,7 +395,7 @@
             </div>
             <!-- caraousel Ends Here  -->
             <!-- featureed Employee Sextion starts here  -->
-           <div class="featured">
+            <div class="featured">
                 <p style="text-align: center;">Featured Employee</p>
                 <div class="feautre1">
                     <div class="cardss">
@@ -420,44 +464,42 @@
                             </a>
                         </div>
                     </div>
+
                 </div>
             </div>
             <!-- featured section ends here  -->
             <!-- Security starts from here  -->
             <div class="container-fluid c5">
                 <p>We ensure Hygine and your Saftey</p>
-                <div class="btm">
-                    <button class="btn btm1 " type="button" data-toggle="collapse" data-target="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample1">Hygine</button>
-                    <button class="btn btm1" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Covid</button>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <div class="collapse multi-collapse" id="multiCollapseExample1">
-                            <ul class="ul">
-                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ex voluptas sunt nihil fugit quia sequi fuga, iure nulla. Numquam!</li>
-                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ex voluptas sunt nihil fugit quia sequi fuga, iure nulla. Numquam!</li>
-                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ex voluptas sunt nihil fugit quia sequi fuga, iure nulla. Numquam!</li>
-                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ex voluptas sunt nihil fugit quia sequi fuga, iure nulla. Numquam!</li>
-                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ex voluptas sunt nihil fugit quia sequi fuga, iure nulla. Numquam!</li>
-                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ex voluptas sunt nihil fugit quia sequi fuga, iure nulla. Numquam!</li>
-                            </ul>
-                        </div>
+                <div class="norms">
+                    <div class="norms1">
+                        <!-- onmousemove="down(this)" onmouseout="down1(this) -->
+                        <p>Hygine</p>
+                        <ul class="expandable" id="nav1">
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio et eos ipsum voluptate quia ea!</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident autem est quos incidunt quasi rem culpa laborum corrupti! Quod, quibusdam.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident autem est quos incidunt quasi rem culpa laborum corrupti! Quod, quibusdam.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident autem est quos incidunt quasi rem culpa laborum corrupti! Quod, quibusdam.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident autem est quos incidunt quasi rem culpa laborum corrupti! Quod, quibusdam.</li>
+                        </ul>
+
                     </div>
-                    <div class="col">
-                        <div class="collapse multi-collapse" id="multiCollapseExample2">
-                            <ul class="ul">
-                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ex voluptas sunt nihil fugit quia sequi fuga, iure nulla. Numquam!</li>
-                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ex voluptas sunt nihil fugit quia sequi fuga, iure nulla. Numquam!</li>
-                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ex voluptas sunt nihil fugit quia sequi fuga, iure nulla. Numquam!</li>
-                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ex voluptas sunt nihil fugit quia sequi fuga, iure nulla. Numquam!</li>
-                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ex voluptas sunt nihil fugit quia sequi fuga, iure nulla. Numquam!</li>
-                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ex voluptas sunt nihil fugit quia sequi fuga, iure nulla. Numquam!</li>
-                            </ul>
-                        </div>
+                    <div class="norms1">
+                        <!-- onmouseover="down2(this)" onmouseout="down3(this) -->
+                        <p>Covid Norms</p>
+                        <ul class="expandable1" id="nav2">
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio et eos ipsum voluptate quia ea!</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident autem est quos incidunt quasi rem culpa laborum corrupti! Quod, quibusdam.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident autem est quos incidunt quasi rem culpa laborum corrupti! Quod, quibusdam.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident autem est quos incidunt quasi rem culpa laborum corrupti! Quod, quibusdam.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident autem est quos incidunt quasi rem culpa laborum corrupti! Quod, quibusdam.</li>
+                        </ul>
+
                     </div>
+
                 </div>
             </div>
-            <!-- security Ends Here  -->
+            <!-- security ends Here  -->
 
             <!-- review wala section begins here   -->
             <div class="review">
@@ -475,6 +517,7 @@
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores nam sint placeat delectus impedit et quod eaque eveniet officiis, quaerat iure omnis praesentium. Voluptates reprehenderit quae provident officia cum velit! Lorem, ipsum dolor sit amet consectetur
                             adipisicing elit. Optio, atque!
                         </div>
+
                     </div>
                     <div class="rev-card">
                         <div class="rev-img">
@@ -482,13 +525,22 @@
                             <p>Pankaj</p>
                         </div>
                         <div class="rev-content">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores nam sint placeat delectus impedit et quod eaque eveniet officiis, quaerat iure omnis praesentium. Voluptates reprehenderit quae provident officia cum velit! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio, atque!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores nam sint placeat delectus impedit et quod eaque eveniet officiis, quaerat iure omnis praesentium. Voluptates reprehenderit quae provident officia cum velit! Lorem, ipsum dolor sit amet consectetur
+                            adipisicing elit. Optio, atque!
                         </div>
+
                     </div>
+
                 </div>
+
+
             </div>
+
             <!-- review ends here  -->
+
+
         </div>
+
 
        <!-- footer -->
         <div class="footer">
