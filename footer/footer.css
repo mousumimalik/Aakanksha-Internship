@@ -12,8 +12,8 @@ body {
 /* FOOTER */
 
 .footer {
-    background: #85317a;
-    color: #d3d3d3;
+    background: rgb(14, 143, 36);
+    color: white;
     height: 700px;
     position: relative;
     margin-top: 20px;
@@ -177,7 +177,7 @@ body {
 /* team */
 
 .team-bgimg{
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 .team-container{
@@ -206,12 +206,12 @@ body {
 
 .team-container .header{
   font-size: 3rem;
-  font-family: 'Lobster', cursive;
+  font-family: 'Merriweather', serif;
 }
 
 .team-container .text{
   font-size: 2rem;
-  font-family: 'Lobster', cursive;
+  font-family: 'Raleway', sans-serif;
 }
 
 .slide-main{
@@ -273,6 +273,15 @@ label{
   width: 100px; 
   position: absolute;
   margin-left: 42%;
+  background-color: rgb(14, 126, 14);
+  border-color: rgb(14, 126, 14);
+  color: white;
+}
+
+.submit-btn:hover {
+  background-color: #35bb5477;
+  border-color: #35bb5477;
+  color: white;
 }
 
 
@@ -313,7 +322,7 @@ panel-container {
 }
 
 .rating small {
-  color: rgb(126, 81, 123);
+  color: rgb(93, 151, 117);
   display: inline-block;
   margin: 10px 0 0;
   font-size: 1rem;
@@ -321,13 +330,19 @@ panel-container {
 
 .rating.active small,
 .rating:hover small {
-  color: #111;
+  color: #14db2fb4;
 }
 
-.fa-heart {
+
+.icon-heart {
   color: red;
   font-size: 30px;
   margin-bottom: 10px;
+}
+
+.done {
+  color: white;
+  font-size: 30px;
 }
 
 

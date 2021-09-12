@@ -79,7 +79,7 @@ window.addEventListener("load", function(){
   changeText();
 });
 
-const textArr = ["CARPENTER", "ELECTRICIAN", "PLUMBER", "TURIST GUIDE", "COOK", "LAUNDRY", "TECHNICIAN"];
+const textArr = ["CARPENTER", "ELECTRICIAN", "PLUMBER", "TURIST GUIDE", "COOK", "LAUNDRY", "TECHNICIAN", "MECHANIC", "HOMECARE", "SECURITY", "PAINTER"];
 
 let index = 0;
 let word = textArr[index];

@@ -5,7 +5,7 @@
 }
 
 .navbar {
-    background-color: #1A1A2E;
+    background-color: rgb(14, 143, 36);
     width: 100%;
     font-size: 18px;
 }
@@ -125,8 +125,6 @@
     height: 90px;
     width: 90px;
 }
-
-
 /* nav finished  */
 
 
@@ -147,7 +145,6 @@
     height: 30vh;
     z-index: -1;
     position: absolute;
-    background-color: rgba(55, 55, 247, 0.678);
     z-index: -1;
 }
 
@@ -221,6 +218,8 @@
 /* tagline */
 
 #tagline {
+    height: 100px;
+    background-color: rgb(168, 219, 168);
     margin: 30px 0px;
     display: flex;
     flex-direction: column;
@@ -228,6 +227,8 @@
     align-items: center;
     font-size: 35px;
     font-family: "Raleway", sans-serif;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
 
 
@@ -246,7 +247,6 @@
 .carousel {
     width: 90%;
     margin: auto;
-    /* margin-top: 5vh; */
 }
 
 .crimg {
@@ -508,8 +508,6 @@ textarea {
     margin-right: 3px;
     margin-top: 4px;
     margin-left: 3px;
-    /* height: 25px;
-    width: 25px; */
 }
 
 .heart:hover,
@@ -555,12 +553,10 @@ textarea {
 
 @media(max-width:992px) {
     .nab {
-        /* width: 60%; */
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: space-around;
-        /* border: 2px solid white; */
         margin: 5px 0px;
         background-image: none;
     }

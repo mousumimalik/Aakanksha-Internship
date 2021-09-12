@@ -23,7 +23,7 @@
     <div class="main-container  feedback-form">
 
         <div class="view">
-            <img src="./pics/f.jpg">
+            <img src="./pics/feedback.jpg">
         </div>
 
         <div class="container">
@@ -33,9 +33,9 @@
                     <h1 class="text-center mt-5 font-weight-bold">Feedback</h1>
                     <hr class="bg-white">
                     <h6 class="text-center">Please write your feedback below:</h6>
-                    <h3 class="mt-4">How do you rate your overall experience?</h3>
 
                     <form class="feedback">
+                        <h3 class="mt-4">How do you rate your overall experience?</h3>
                         
                         <div class="panel-container ratings-container">
                                 <div class="rating">
@@ -74,7 +74,7 @@
                     </form>
 
                     <div class="done hide">
-                            <i class="fas fa-heart"></i>
+                            <i class="bi bi-suit-heart-fill icon-heart"></i>
                             <strong>Thank you!</strong>
                             <p>We'll use your feedback to improve our customer support performance.</p>
                             <button class="contact-btn" id="doneBtn">Done</button> 
@@ -157,7 +157,7 @@
             feedback.classList.add("hide");
         });
 
-        done.addEventListener('click', ()=>{
+        doneBtn.addEventListener('click', ()=>{
             feedback.classList.remove("hide");
             done.classList.add("hide");
         });
